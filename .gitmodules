@@ -1,24 +1,28 @@
 [submodule "bitbake"]
 	path = bitbake
 	url = git://github.com/openembedded/bitbake
-	branch = 1.38
+	branch = 1.40
 [submodule "openembedded-core"]
 	path = openembedded-core
 	url = git://github.com/openembedded/openembedded-core
-	branch = sumo
+	branch = thud
 [submodule "meta-openembedded"]
 	path = meta-openembedded
 	url = git://github.com/openembedded/meta-openembedded
-	branch = sumo
+	branch = thud
 [submodule "meta-security"]
 	path = meta-security
 	url = git://git.yoctoproject.org/meta-security
-	branch = sumo
+	branch = thud
 [submodule "meta-mender"]
 	path = meta-mender
 	url = git://github.com/mendersoftware/meta-mender
-	branch = sumo
+	branch = thud
 [submodule "meta-ettus"]
 	path = meta-ettus
 	url = git://github.com/EttusResearch/meta-ettus
+	branch = thud
+[submodule "meta-sdr"]
+	path = meta-sdr
+	url = https://github.com/balister/meta-sdr.git
 	branch = sumo
