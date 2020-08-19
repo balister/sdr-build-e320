@@ -17,36 +17,50 @@ Getting Started
 
 1. Clone the git repository:
 
+```
     $ git clone https://github.com/balister/sdr-build-e320.git
+```
 
 2. Check out the appropriate branch:
 
-    $ cd sdr-build
+```
+    $ cd sdr-build-e320
     $ git checkout -b zeus-gnuradio origin/zeus-gnuradio
+```
 
 3. Update the submodules:
 
+```
     $ git submodule update --init
+```
 
 4. Initialize the build system:
 
+```
     $ TEMPLATECONF=\`pwd\`/meta-sdr/conf/conf-e3xx source ./openembedded-core/oe-init-build-env ./build ./bitbake
 
 5. Select the MACHINE to build for:
 
     $ export MACHINE="ni-e31x-sg3"   (default from local.conf)
+```
 
 6. Build an image:
 
+```
     $ bitbake gnuradio-dev-image
+```
 
 7. Build another image:
 
+```
     $ bitbake gnuradio-demo-image
+```
 
 8. Build and sdk:
 
+```
     $ bitbake -c populate_sdk gnuradio-dev-image
+```
 
 Notes
 -----
