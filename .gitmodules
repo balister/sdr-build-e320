@@ -20,8 +20,8 @@
 	branch = zeus
 [submodule "meta-ettus"]
 	path = meta-ettus
-	url = git://github.com/EttusResearch/meta-ettus
-	branch = zeus
+	url = git://github.com/balister/meta-ettus-1
+	branch = zeus-work
 [submodule "meta-sdr"]
 	path = meta-sdr
 	url = https://github.com/balister/meta-sdr.git
