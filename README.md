@@ -38,9 +38,11 @@ Getting Started
 
 ```
     $ TEMPLATECONF=\`pwd\`/meta-sdr/conf/conf-e3xx source ./openembedded-core/oe-init-build-env ./build ./bitbake
+```
 
 5. Select the MACHINE to build for:
 
+```
     $ export MACHINE="ni-e31x-sg3"   (default from local.conf)
 ```
 
