@@ -64,9 +64,27 @@ Getting Started
     $ bitbake -c populate_sdk gnuradio-dev-image
 ```
 
+Day to Day
+----------
+
+1. Setup environment after first setup.
+
+```
+    $ cd <top of build>
+    $ source ./openembedded-core/oe-init-build-env ./build ./bitbake
+```
+
+2. Check for updates.
+
+```
+    $ cd <top of build>
+    $ git pull
+    $ git submodule update --init
+```
+
 Notes
 -----
     * Uses meta-ettus from my repo so I can stage fixes
     * Includes the mender repo, but isn't using them
-    * I really need to rafactor this so I can build e320 and e3xx machines
+    * I really need to refactor this so I can build e320 and e3xx machines
       without playing with bblayers.
