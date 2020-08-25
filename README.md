@@ -82,6 +82,23 @@ Day to Day
     $ git submodule update --init
 ```
 
+Copying the image to an SD card
+-------------------------------
+
+1. Install bmaptool from your distro's package manager. (Fedora and Ubuntu)
+
+2. Insert the card into the writer, if partitions automount, un mount them.
+
+3. Figure out what device the card is. Something like /dev/sdh.
+
+4. Run
+
+```
+    $ sudo bmaptool copy tmp-glibc/deploy/images/ni-e31x-sg3/gnuradio-dev-image-ni-e31x-sg3.wic.gz /dev/sdX
+```
+
+5. Replace X with the correct letter.
+
 Notes
 -----
     * Uses meta-ettus from my repo so I can stage fixes
